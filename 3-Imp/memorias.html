@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo do Terceirão Escola SESI CG</title>
+    <style>
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 45px;
+            color: black;
+            text-align: center;
+            background-color: pink;
+       
+        }
+        h2{
+            padding-left: 100px;
+            padding-right: 100px;
+            display: flex;
+            justify-content: space-between;
+            float: inline-start;
+            background-color: aquamarine;
+        }
+        h3{
+                display: inline-block;
+                font-size: 35px;
+                text-align: left;
+            }
+        .textcima{
+            display: flex;
+            justify-content: space-between;
+            float: inline-start;
+            padding: 1.5rem;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        .nav-bar{
+            display: flex;
+            justify-content: space-between;
+            float: inline-start;
+            padding: 1.5rem;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        .section{
+            padding: 1.6rem;
+        }
+        img{
+            display: inline;
+            margin-left: 400px;
+        }
+        .containerpost{
+            display: flex;
+            align-items: center;
+        }
+        * {
+         box-sizing: border-box;
+        }
+        .container {
+        position: relative;
+        }
+
+        .mySlides {
+         display: none;
+        }
+
+        .cursor {
+        cursor: pointer;
+        }
+
+        .prev,
+        .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+        }
+
+        .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover,
+        .next:hover {
+         background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }
+
+        .caption-container {
+         text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+        }
+
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+        .column {
+        float: left;
+        width: 20%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Logo do Terceirão Escola SESI CG</h1>
+     <header>
+        <div class="textcima">
+            <h2>Séries</h2>
+            <select name="Séries" required="required">
+                <option value="">Escolha um série</option>
+                <option value="3ºA">3ºA</option>
+                <option value="3ºB">3ºB</option>
+                <option value="3ºC">3ºC</option>
+                <option value="3ºD">3ºD</option>
+                <option value="3ºE">3ºE</option>
+            </select>
+            <h2><a href="blogsesi.html" style="color: black;">Página inicial</a></h2>
+            <h2><a href="eventos.html" style="color: black;">Eventos</a></h2>
+            <h2><a href="loja.html" style="color: black;">loja</a></h2>
+            <h2><a href="memorias.html" style="color: black;">memórias</a></h2>
+            <input type="text" placeholder="Procurando Algo">
+            
+        </div>   
+        
+        </div>
+    </header>
+    <div class="container">
+        <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+              <img src="/Foto.png" style="width:30%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+              <img src="/Foto.png" style="width:30%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+              <img src="/Foto.png" style="width:30%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+              <img src="/Foto.png" style="width:30%">
+           </div>
+
+           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+           <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+           <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="/Foto.png" style="width:30%" onclick="currentSlide(1)" alt="Foto">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/Foto.png" style="width:30%" onclick="currentSlide(2)" alt="Foto">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/Foto.png" style="width:30%" onclick="currentSlide(3)" alt="Foto">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/Foto.png" style="width:30%" onclick="currentSlide(4)" alt="Foto">
+            </div>
+          </div>
+        </div>
+        </body>
+        </html>
+            
+            
+        

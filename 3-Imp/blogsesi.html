@@ -21,6 +21,11 @@
             float: inline-start;
             background-color: aquamarine;
         }
+        h3{
+                display: inline-block;
+                font-size: 35px;
+                text-align: left;
+            }
         .textcima{
             display: flex;
             justify-content: space-between;
@@ -40,6 +45,14 @@
         .section{
             padding: 1.6rem;
         }
+        img{
+            display: inline;
+            margin-left: 400px;
+        }
+        .containerpost{
+            display: flex;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
@@ -58,7 +71,7 @@
             <h2><a href="blogsesi.html" style="color: black;">Página inicial</a></h2>
             <h2><a href="eventos.html" style="color: black;">Eventos</a></h2>
             <h2><a href="loja.html" style="color: black;">loja</a></h2>
-            <h2><a href="memórias.html" style="color: black;">memórias</a></h2>
+            <h2><a href="memorias.html" style="color: black;">memórias</a></h2>
             <input type="text" placeholder="Procurando Algo">
               
         </div>   
@@ -70,17 +83,23 @@
         <section id="inicial" class="section"></section>
         <section id="inicial" class="section"></section>
 
-        <title>Nome do Post</title>
-        <h2>Nome do Post</h2>
-        <img src="/imagem.png">
-        <p>Texto do post 1</p>
-        <title>Sobre Nós</title>
-        <h2>Sobre Nós</h2>
-        <img src="/Foto.png">
-        <p>Texto sobre o Terceirão</p>
-        </div>
-
         
-
+        <h3 style="padding-right: 1530px;">Nome do Post</h3><h3 style="text-align: right;">Sobre Nós</h3>
+        <div class="containerpost">
+            <p style="justify-content: space-between;">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
+                Tempore, asperiores autem.Culpa quam ipsam maxime,  
+                <br>molestias aliquam impedit dolorum voluptate cumque rem id  <br>
+                nobis facere et ipsa maiores fugiat modi.</p>
+            <img src="/imagem.png" style="width: 450px; height: 350px;margin-left: 50px;" >
+        
+            <img src="/imagem.png" style="width: 450px; height: 350px;margin-right: 50px;" >
+            <p style="justify-content: space-between;">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
+                Tempore, asperiores autem.Culpa quam ipsam maxime,  
+                <br>molestias aliquam impedit dolorum voluptate cumque rem id  <br>
+                nobis facere et ipsa maiores fugiat modi.</p>
+        </div>
+       
 </body>
 </html>
