@@ -48,6 +48,31 @@
             display: flex;
             align-items: center;
         }
+        body
+        {
+            font-family: Arial;
+            padding: 14px;
+            text-align: left;
+        }
+        table{
+            width: 70%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            text-align: left;
+            vertical-align: bottom;
+            background-color:pink;
+            color: black;
+        }   
+        tr:nth-child(even){background-color: #ffffe0;
+        }
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        }
+        caption{
+            font-size: 50px;
+            font-family: 'Times New Roman';
+        }
     </style>
 </head>
 <body>
@@ -55,7 +80,7 @@
      <header>
         <div class="textcima">
             <h2>Séries</h2>
-            <select name="Séries" required="required">
+            <select name="Séries" required="required" style="height: 55px; margin-top: 19px;">
                 <option value="">Escolha um série</option>
                 <option value="3ºA">3ºA</option>
                 <option value="3ºB">3ºB</option>
@@ -67,7 +92,32 @@
             <h2><a href="eventos.html" style="color: black;">Eventos</a></h2>
             <h2><a href="loja.html" style="color: black;">loja</a></h2>
             <h2><a href="memorias.html" style="color: black;">memórias</a></h2>
-            <input type="text" placeholder="Procurando Algo">
+            <input type="text" placeholder="Procurando Algo" style="height: 55px; margin-top: 19px;">
               
         </div>   
-        
+        <table class="center">
+            <caption> Eventos do Terceirão</caption>
+            <thead>
+                <tr>
+                    <th>Meses </th>
+                    <th>Evento </th>
+                    <th>Dia </th>
+                </tr>  
+                <tr>
+                    <td>Fevereiro</td>
+                    <td>Trote de Carnaval</td>
+                    <td>Dia 14</td>
+                </tr>
+                <tr>
+    
+                    <td>Março</td>
+                    <td>Rifa de Páscoa</td>
+                    <td> Dia 29 </td>
+                </tr>
+                <tr>
+                    <td>Abril</td>
+                    <td>Aniverário da Rebeca</td>
+                    <td>Dia 10</td>
+                </tr>
+            </thead>
+        </table>
