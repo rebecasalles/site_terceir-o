@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
     <title>Logo do Terceirão Escola SESI CG</title>
     <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            text-align: left;
+        }
         h1{
             font-family: 'Times New Roman', Times, serif;
             font-size: 45px;
@@ -20,6 +26,7 @@
             justify-content: space-between;
             float: inline-start;
             background-color: aquamarine;
+            font-size: 25px;
         }
         .textcima{
             display: flex;
@@ -48,12 +55,6 @@
             display: flex;
             align-items: center;
         }
-        body
-        {
-            font-family: Arial;
-            padding: 14px;
-            text-align: left;
-        }
         table{
             width: 70%;
             border-collapse: collapse;
@@ -62,6 +63,8 @@
             vertical-align: bottom;
             background-color:pink;
             color: black;
+            font-family: Arial;
+            padding: 14px;
         }   
         tr:nth-child(even){background-color: #ffffe0;
         }
@@ -69,18 +72,14 @@
         margin-left: auto;
         margin-right: auto;
         }
-        caption{
-            font-size: 50px;
-            font-family: 'Times New Roman';
-        }
     </style>
 </head>
-<body>
+<body style="background: 0%; color:black;">
     <h1>Logo do Terceirão Escola SESI CG</h1>
      <header>
         <div class="textcima">
             <h2>Séries</h2>
-            <select name="Séries" required="required" style="height: 55px; margin-top: 19px;">
+            <select name="Séries" required="required" style="height: 60px; margin-top: 2px;">
                 <option value="">Escolha um série</option>
                 <option value="3ºA">3ºA</option>
                 <option value="3ºB">3ºB</option>
@@ -90,13 +89,14 @@
             </select>
             <h2><a href="blogsesi.html" style="color: black;">Página inicial</a></h2>
             <h2><a href="eventos.html" style="color: black;">Eventos</a></h2>
-            <h2><a href="loja.html" style="color: black;">loja</a></h2>
-            <h2><a href="memorias.html" style="color: black;">memórias</a></h2>
-            <input type="text" placeholder="Procurando Algo" style="height: 55px; margin-top: 19px;">
+            <h2><a href="loja.html" style="color: black;">Loja</a></h2>
+            <h2><a href="memorias.html" style="color: black;">Memórias</a></h2>
+            <input type="text" placeholder="Procurando Algo" style="height: 60px; margin-top: 2px;">
               
         </div>   
+        </header>
         <table class="center">
-            <caption> Eventos do Terceirão</caption>
+            <h1 style="background: 0%;">  Eventos do Terceirão</h1>
             <thead>
                 <tr>
                     <th>Meses </th>
@@ -121,3 +121,5 @@
                 </tr>
             </thead>
         </table>
+</body>
+</html>
