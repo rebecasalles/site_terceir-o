@@ -124,18 +124,27 @@
         img{
         margin-left: 220px;
         margin-right: auto;
+        display: inline;
         }
-
+       figure{
+        display: inline;
+       }
+       figcaption{
+        display: inline;
+        margin-left: 320px;
+        font-weight: bold;
+        font-size: 20px;
+       }
     </style>
 </head>
-<body style="background: 0%; color:black;">
+<body style="background: 0%; color:black">
     <h1>Logo do Terceirão Escola SESI CG</h1>
      <header>
         <div class="textcima">
             <h2>Séries</h2>
             <select name="Séries" required="required" style="height: 60px; margin-top: 2px;">
                 <option value="">Escolha um série</option>
-                <option value="3ºA">3ºA</option>
+                <option value="3apagina.html">3ºA</option>
                 <option value="3ºB">3ºB</option>
                 <option value="3ºC">3ºC</option>
                 <option value="3ºD">3ºD</option>
@@ -153,10 +162,29 @@
         </div> 
     </header>
    <h4>Memórias do Terceirão</h4>
+   <figure>
    <img src="/Foto.png">
+    </figure>
+    <figure>
    <img src="/Foto.png">
+    </figure>
+    <figure>
    <img src="/Foto.png">
+    </figure>
+    <figure>
    <img src="/Foto.png">
+   <br>
+   <figcaption>Legenda</figcaption>
+   <figcaption>Legenda</figcaption>
+   <figcaption>Legenda</figcaption>
+   <figcaption>Legenda</figcaption>
+    </figure>
+    <script>
+    let selectEl = document.getElementsByTagName('select');
+    selectEl[0].addEventListener('change', function() {
+        location.href=this.value;
+    });
+    </script>
 </body>
 </html>
             

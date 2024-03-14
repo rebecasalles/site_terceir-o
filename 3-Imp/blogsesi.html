@@ -63,12 +63,12 @@
         <div class="textcima">
             <h2>Séries</h2>
             <select name="Séries" required="required" style="height: 60px; margin-top: 2px;">
-                <option value="">Escolha um série</option>
-                <option value="3ºA">3ºA</option>
-                <option value="3ºB">3ºB</option>
-                <option value="3ºC">3ºC</option>
-                <option value="3ºD">3ºD</option>
-                <option value="3ºE">3ºE</option>
+                <option value="blogsesi.html">Escolha um série</option>
+                <option value="3apagina.html">3ºA</option>
+                <option value="3bpagina.html">3ºB</option>
+                <option value="3cpagina.html">3ºC</option>
+                <option value="3dpagina.html">3ºD</option>
+                <option value="3epagina.html">3ºE</option>
             </select>
             <h2><a href="blogsesi.html" style="color: black;">Página inicial</a></h2>
             <h2><a href="eventos.html" style="color: black;">Eventos</a></h2>
@@ -86,7 +86,7 @@
         <section id="inicial" class="section"></section>
 
         
-        <h3 style="padding-right: 1510px;">Nome do Post</h3><h3 style="text-align: right;">Sobre Nós</h3>
+        <h3 style="padding-right: 1340px;">Nome do Post</h3><h3 style="text-align: right;">Sobre Nós</h3>
         <div class="containerpost">
             <p style="justify-content: space-between;">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
@@ -122,7 +122,12 @@
                 <br>molestias aliquam impedit dolorum voluptate cumque rem id  <br>
                 nobis facere et ipsa maiores fugiat modi.</p>
         </div>
-        
+    <script>
+            let selectEl = document.getElementsByTagName('select');
+            selectEl[0].addEventListener('change', function() {
+                location.href=this.value;
+            });
+    </script>
        
 </body>
 </html>
